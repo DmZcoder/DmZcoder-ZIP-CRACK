@@ -9,14 +9,14 @@
 
 ## Use in Termux
 
-apt update -y
-apt upgrade -y
-apt install git -y
-apt install python -y
+````bash
+pkg update -y && pkg upgrade -y
+pkg install git python -y
 termux-setup-storage
 git clone https://github.com/DmZcoder/DmZcoder-ZIP-CRACK.git
 cd DmZcoder-ZIP-CRACK
 python dmz_zip.py
+````
 
 ## Features
 - Human-Like Password Generator
@@ -25,5 +25,5 @@ python dmz_zip.py
 - 100% Working on Termux
 
 ## Disclaimer
-Author: DmZcoder
-Purpose: Educational / Research only
+**Author:** DmZcoder
+**Purpose:** Educational / Research only
