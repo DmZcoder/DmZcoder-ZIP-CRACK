@@ -89,10 +89,10 @@ class DmZcoderZipSuite:
 
         full_name      = ask("Full Name (e.g. Wasi Al)", required=True)
         nickname       = ask("Nickname / Username (e.g. Wasi)",  required=True)
-        birth_year     = ask("Birth Year   (e.g. 1998)")
-        birth_month    = ask("Birth Month  (e.g. 05)")
+        birth_year     = ask("Birth Year   (e.g. 1989)")
+        birth_month    = ask("Birth Month  (e.g. 01)")
         birth_day      = ask("Birth Day    (e.g. 22)")
-        mobile_number  = ask("Mobile Number (full, e.g. 8801712345678)")
+        mobile_number  = ask("Mobile Number (full, e.g. 01686458546)")
         partner_name   = ask("Partner / Best-friend name")
         pet_name       = ask("Pet / Favourite word")
         custom_info    = ask("Any other keyword (school, city, team…)")
@@ -526,7 +526,7 @@ class DmZcoderZipSuite:
 
         # ═══════════════════════════════════════════════════════════════
         # PATTERN GROUP 22 — keyword + full mobile number + double specials
-        # covers: Wasi8801712345678##@@, Wasi8801712345678@@##
+        # covers: Wasi01686458546##@@, Wasi01686458546@@##
         # ═══════════════════════════════════════════════════════════════
         DOUBLE_SP = [
             '##', '@@', '!!', '$$', '**',
