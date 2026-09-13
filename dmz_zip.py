@@ -87,8 +87,8 @@ class DmZcoderZipSuite:
                     return v
                 print(f"{Colors.RED}    (required){Colors.END}")
 
-        full_name      = ask("Full Name (e.g. Muhammad Munna)", required=True)
-        nickname       = ask("Nickname / Username (e.g. Munna)",  required=True)
+        full_name      = ask("Full Name (e.g. Wasi Al)", required=True)
+        nickname       = ask("Nickname / Username (e.g. Wasi)",  required=True)
         birth_year     = ask("Birth Year   (e.g. 1998)")
         birth_month    = ask("Birth Month  (e.g. 05)")
         birth_day      = ask("Birth Day    (e.g. 22)")
@@ -502,7 +502,7 @@ class DmZcoderZipSuite:
 
         # ═══════════════════════════════════════════════════════════════
         # PATTERN GROUP 21 — keyword + FULL 4-digit range (0000–9999)
-        # covers: Munna2638, Munna8734, munna0091, MUNNA5500 …
+        # covers: Wasi2638, Wasi8734, munna0091, MUNNA5500 …
         # ═══════════════════════════════════════════════════════════════
         for kw in unique_kw:
             kv_lo  = kw.lower()
@@ -526,7 +526,7 @@ class DmZcoderZipSuite:
 
         # ═══════════════════════════════════════════════════════════════
         # PATTERN GROUP 22 — keyword + full mobile number + double specials
-        # covers: Munna8801712345678##@@, Munna8801712345678@@##
+        # covers: Wasi8801712345678##@@, Wasi8801712345678@@##
         # ═══════════════════════════════════════════════════════════════
         DOUBLE_SP = [
             '##', '@@', '!!', '$$', '**',
